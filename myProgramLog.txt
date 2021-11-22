@@ -1,7 +1,0 @@
-2021-11-22 16:36:09,791 - DEBUG - waiting for enter
-2021-11-22 16:36:11,614 - DEBUG - 1.82
-2021-11-22 16:36:11,614 - DEBUG - waiting for enter
-2021-11-22 16:36:12,285 - DEBUG - 0.67
-2021-11-22 16:36:12,285 - DEBUG - waiting for enter
-2021-11-22 16:36:13,174 - DEBUG - 0.89
-2021-11-22 16:36:13,175 - DEBUG - waiting for enter
