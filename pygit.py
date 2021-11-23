@@ -2,6 +2,7 @@ import git
 import logging
 import time
 import os
+import re
 # 帮助快速上传 并按后缀上传到不同的仓库中
 
 logging.basicConfig(filename='myProgramLog_pygit.txt', level=logging.DEBUG,
@@ -13,11 +14,8 @@ def commitGit(file_address,origin_url):
     logging.debug('0')
     if (file_address.isspace()):#当不输入任何地址时 则在当前路径进行上传
         file_address = '.'
-    endTime=time.time()
-    logging.debug(endTime-startTime)
     os.chdir(file_address)#修改工作路径到上传的文件所在的文件夹
-    endTime=time.time()
-    logging.debug(endTime-startTime)
+
     try:
         repo = git.Repo(path=file_address)
     except:
@@ -25,9 +23,6 @@ def commitGit(file_address,origin_url):
         logging.debug('Establish git sucess!')
     else:
         logging.debug('Open git sucess!')
-        
-    endTime=time.time()
-    logging.debug(endTime-startTime)
 
     try:
         remote = repo.create_remote(name='origin', url=origin_url)
@@ -37,25 +32,42 @@ def commitGit(file_address,origin_url):
         logging.debug('Get remote sucess!')
     else:
         logging.debug('Get remote sucess!')
-
-    endTime=time.time()
-    logging.debug(endTime-startTime)
-
+    pyRegex = re.compile('.*\.py$')
+    pys=[]
+    for folderName, subfolders, filenames in os.walk(r'D:\data\project\test'):
+    #   mo=fileRegex.search(filenames)
+        for filename in filenames:
+            mo=pyRegex.search(filename)
+            if (mo!=None):
+                pys=pys+[folderName+'\\'+filename]
     #filesname=
     os.system(r'git pull origin main:master')
-
-    endTime=time.time()
-    logging.debug(endTime-startTime)
-
-    repo.index.add(['pygit.py'])
+    for address in pys:
+        repo.index.add(address)
     t = time.localtime()
     repo.index.commit('time:'+time.asctime(t)+' author:Chan_Leo')
 
-    endTime=time.time()
-    logging.debug(endTime-startTime)
-
     os.system(r'git push origin master:main')
-    endTime=time.time()
-    logging.debug(endTime-startTime)
 
 commitGit(r'D:\data\project\test',r'git@github.com:c369578336/test.git')
+"""
+rarRegex = re.compile('.*\.rar$')
+rars=[]
+for folderName, subfolders, filenames in os.walk('D:\data\project\sundry'):
+#    mo=fileRegex.search(filenames)
+    for filename in filenames:
+        mo=rarRegex.search(filename)
+        if (mo!=None):
+            rars=rars+[folderName+'\\'+filename]
+print(rars)
+
+pyRegex = re.compile('.*\.py$')
+pys=[]
+for folderName, subfolders, filenames in os.walk(r'D:\data\project\test'):
+#    mo=fileRegex.search(filenames)
+    for filename in filenames:
+        mo=pyRegex.search(filename)
+        if (mo!=None):
+            pys=pys+[folderName+'\\'+filename]
+print(pys)
+"""
