@@ -13,3 +13,5 @@ print(dogge.name)
 print(dogge.state)
 dogge.sit()
 print(dogge.state)
+
+#it seems a little different?
