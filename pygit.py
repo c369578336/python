@@ -9,11 +9,15 @@ logging.basicConfig(filename='myProgramLog_pygit.txt', level=logging.DEBUG,
 
 
 def commitGit(file_address,origin_url):
+    startTime=time.time()
+    logging.debug('0')
     if (file_address.isspace()):#当不输入任何地址时 则在当前路径进行上传
         file_address = '.'
-
+    endTime=time.time()
+    logging.debug(endTime-startTime)
     os.chdir(file_address)#修改工作路径到上传的文件所在的文件夹
-
+    endTime=time.time()
+    logging.debug(endTime-startTime)
     try:
         repo = git.Repo(path=file_address)
     except:
@@ -22,6 +26,8 @@ def commitGit(file_address,origin_url):
     else:
         logging.debug('Open git sucess!')
         
+    endTime=time.time()
+    logging.debug(endTime-startTime)
 
     try:
         remote = repo.create_remote(name='origin', url=origin_url)
@@ -31,12 +37,25 @@ def commitGit(file_address,origin_url):
         logging.debug('Get remote sucess!')
     else:
         logging.debug('Get remote sucess!')
+
+    endTime=time.time()
+    logging.debug(endTime-startTime)
+
     #filesname=
     os.system(r'git pull origin main:master')
+
+    endTime=time.time()
+    logging.debug(endTime-startTime)
+
     repo.index.add(['pygit.py'])
     t = time.localtime()
     repo.index.commit('time:'+time.asctime(t)+' author:Chan_Leo')
-    os.system(r'git push origin master:main')
 
+    endTime=time.time()
+    logging.debug(endTime-startTime)
+
+    os.system(r'git push origin master:main')
+    endTime=time.time()
+    logging.debug(endTime-startTime)
 
 commitGit(r'D:\data\project\test',r'git@github.com:c369578336/test.git')
