@@ -15,12 +15,13 @@ def commitGit(file_address,origin_url):
     os.chdir(file_address)#修改工作路径到上传的文件所在的文件夹
 
     try:
-        repo = git.Repo.init(path=file_address)#建立本地库
-    except:
         repo = git.Repo(path=file_address)
-        logging.debug('Open git sucess!')
-    else:
+    except:
+        repo = git.Repo.init(path=file_address)#建立本地库
         logging.debug('Establish git sucess!')
+    else:
+        logging.debug('Open git sucess!')
+        
 
     try:
         remote = repo.create_remote(name='origin', url=origin_url)
