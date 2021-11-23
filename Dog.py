@@ -16,4 +16,3 @@ print(dogge.state)
 
 #反正也是test
 #test again!
-#It seems secuess
