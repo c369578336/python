@@ -4,3 +4,41 @@
 2021-11-23 18:31:46,044 - DEBUG - Popen(['git', 'remote', 'rm', 'origin'], cwd=D:\data\project\test, universal_newlines=False, shell=None, istream=None)
 2021-11-23 18:31:46,111 - DEBUG - Popen(['git', 'remote', 'add', 'origin', 'git@github.com:c369578336/test.git'], cwd=D:\data\project\test, universal_newlines=False, shell=None, istream=None)
 2021-11-23 18:31:46,159 - DEBUG - Get remote sucess!
+2021-11-23 18:31:50,028 - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=D:\data\project\test, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-11-23 18:31:50,089 - DEBUG - Popen(['git', 'cat-file', '--batch'], cwd=D:\data\project\test, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-11-23 18:32:35,654 - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, '系统找不到指定的文件。', None, 2, None)
+2021-11-23 18:32:35,654 - DEBUG - Open git sucess!
+2021-11-23 18:32:35,655 - DEBUG - Popen(['git', 'remote', 'add', 'origin', 'git@github.com:c369578336/test.git'], cwd=D:\data\project\test, universal_newlines=False, shell=None, istream=None)
+2021-11-23 18:32:35,698 - DEBUG - Popen(['git', 'remote', 'rm', 'origin'], cwd=D:\data\project\test, universal_newlines=False, shell=None, istream=None)
+2021-11-23 18:32:35,753 - DEBUG - Popen(['git', 'remote', 'add', 'origin', 'git@github.com:c369578336/test.git'], cwd=D:\data\project\test, universal_newlines=False, shell=None, istream=None)
+2021-11-23 18:32:35,803 - DEBUG - Get remote sucess!
+2021-11-23 18:33:03,177 - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=D:\data\project\test, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-11-23 18:33:03,243 - DEBUG - Popen(['git', 'cat-file', '--batch'], cwd=D:\data\project\test, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-11-23 18:36:39,743 - DEBUG - 0
+2021-11-23 18:36:39,743 - DEBUG - 0.0
+2021-11-23 18:36:39,743 - DEBUG - 0.0
+2021-11-23 18:36:39,750 - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, '系统找不到指定的文件。', None, 2, None)
+2021-11-23 18:36:39,752 - DEBUG - Open git sucess!
+2021-11-23 18:36:39,752 - DEBUG - 0.009973526000976562
+2021-11-23 18:36:39,752 - DEBUG - Popen(['git', 'remote', 'add', 'origin', 'git@github.com:c369578336/test.git'], cwd=D:\data\project\test, universal_newlines=False, shell=None, istream=None)
+2021-11-23 18:36:39,807 - DEBUG - Popen(['git', 'remote', 'rm', 'origin'], cwd=D:\data\project\test, universal_newlines=False, shell=None, istream=None)
+2021-11-23 18:36:39,867 - DEBUG - Popen(['git', 'remote', 'add', 'origin', 'git@github.com:c369578336/test.git'], cwd=D:\data\project\test, universal_newlines=False, shell=None, istream=None)
+2021-11-23 18:36:39,918 - DEBUG - Get remote sucess!
+2021-11-23 18:36:39,918 - DEBUG - 0.17552804946899414
+2021-11-23 18:36:44,960 - DEBUG - 5.217783451080322
+2021-11-23 18:36:44,972 - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=D:\data\project\test, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-11-23 18:36:45,038 - DEBUG - Popen(['git', 'cat-file', '--batch'], cwd=D:\data\project\test, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-11-23 18:36:45,091 - DEBUG - 5.3484344482421875
+2021-11-23 18:36:49,820 - DEBUG - 10.077194213867188
+2021-11-23 18:36:50,512 - INFO - Ignored error after process had died: OSError(9, '句柄无效。', None, 6, None)
+2021-11-23 18:36:50,512 - INFO - Ignored error after process had died: OSError(9, '句柄无效。', None, 6, None)
+2021-11-23 18:36:50,512 - INFO - Ignored error after process had died: OSError(9, '句柄无效。', None, 6, None)
+2021-11-23 18:36:50,512 - INFO - Ignored error after process had died: OSError(9, '句柄无效。', None, 6, None)
+2021-11-23 18:39:03,328 - DEBUG - 0
+2021-11-23 18:39:03,332 - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, '系统找不到指定的文件。', None, 2, None)
+2021-11-23 18:39:03,332 - DEBUG - Open git sucess!
+2021-11-23 18:39:03,333 - DEBUG - Popen(['git', 'remote', 'add', 'origin', 'git@github.com:c369578336/test.git'], cwd=D:\data\project\test, universal_newlines=False, shell=None, istream=None)
+2021-11-23 18:39:03,378 - DEBUG - Popen(['git', 'remote', 'rm', 'origin'], cwd=D:\data\project\test, universal_newlines=False, shell=None, istream=None)
+2021-11-23 18:39:03,434 - DEBUG - Popen(['git', 'remote', 'add', 'origin', 'git@github.com:c369578336/test.git'], cwd=D:\data\project\test, universal_newlines=False, shell=None, istream=None)
+2021-11-23 18:39:03,487 - DEBUG - Get remote sucess!
+2021-11-23 18:39:07,331 - DEBUG - 4.003713607788086
